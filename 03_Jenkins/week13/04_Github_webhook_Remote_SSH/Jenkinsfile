@@ -8,6 +8,7 @@ pipeline {
         SSH_CREDENTIALS = 'ssh_server-2' // Use the ID of the Jenkins stored SSH credentials.
     }
 
+    
     stages {
         stage('Login to Docker Hub') {
             steps {
