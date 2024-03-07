@@ -45,7 +45,7 @@ pipeline {
         stage('Clear Docker Components') {
             steps {
                 script {
-                    / Only stop containers if there are any running
+                    // Only stop containers if there are any running
                     sh 'docker ps -q | xargs -r docker stop'
                     // Only remove containers if there are any
                     sh 'docker ps -a -q | xargs -r docker rm'
